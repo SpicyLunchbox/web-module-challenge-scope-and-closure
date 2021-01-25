@@ -43,6 +43,8 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+  - closure allows for a nested function to reach outside of itself for a variable.  Even in standard console, the window is the highest container, so global variables are still contained within it.  It also allows for variables to be placed locally, therefore hidden from other functions.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -64,8 +66,13 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+  - the anonymous function must reference the "name" parameter within its parent function.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+  - "newRoll"'s output can always change because Math.random() generates a random number.  the name will always be the same.
+
 c. What is the lexical scope of `newRoll`? 
+  - newRoll is created within and can only be used by the anonymous function.
 
 
 ### Task 3 - Stretch Goals
